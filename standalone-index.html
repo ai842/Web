@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Hairline - Video Series</title>
+    <meta name="description" content="Watch our video series showcasing American Hairline's advanced non-surgical hair replacement solutions">
+    
+    <!-- HLS.js for video streaming -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    
+    <link rel="stylesheet" href="standalone-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <!-- Header -->
+                <div class="header">
+                    <h1 class="main-title">American Hairline</h1>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Video Content -->
+                <div class="video-section">
+                    <div class="video-wrapper">
+                        <h2 id="videoTitle" class="video-title"></h2>
+                        
+                        <div class="video-container">
+                            <video id="videoPlayer" class="video-player" controls playsinline>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <p id="videoDescription" class="video-description"></p>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="controls">
+                        <div id="videoCounter" class="video-counter"></div>
+                        
+                        <button id="nextVideoButton" class="next-button" disabled>
+                            <span class="button-content">
+                                <span id="buttonText">Next Video</span>
+                                <svg id="buttonIcon" class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </span>
+                            <div class="button-shine"></div>
+                        </button>
+                    </div>
+
+                    <p id="unlockMessage" class="unlock-message">
+                        Watch the video to unlock the next one
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="standalone-script.js"></script>
+</body>
+</html>
